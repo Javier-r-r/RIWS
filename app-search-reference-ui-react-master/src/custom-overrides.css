@@ -1,0 +1,15 @@
+.filters-collapsed .sui-layout-main {
+  width: 100% !important;
+  padding-left: 0 !important;
+}
+
+/* If the sidebar is still present for any reason, hide it */
+.filters-collapsed .sui-layout-sidebar {
+  display: none !important;
+}
+
+/* tighten up inner padding when filters are hidden */
+.filters-collapsed .sui-layout-body__inner {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

@@ -1,0 +1,1 @@
+& C:/Users/javir/Documents/Python/RIWS_Scrappy/.venv/Scripts/Activate.ps1

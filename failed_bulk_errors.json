@@ -1,0 +1,122 @@
+[
+  {
+    "index": {
+      "_index": "scuffers_products",
+      "_id": "https://scuffers.com/collections/iconic-camo-sneakers/products/iconic-camo-green-sneaker",
+      "status": 400,
+      "error": {
+        "type": "document_parsing_exception",
+        "reason": "[1:1338] failed to parse field [sizes] of type [keyword] in document with id 'https://scuffers.com/collections/iconic-camo-sneakers/products/iconic-camo-green-sneaker'. Preview of field's value: '{eu=36, uk=4.5, usw=6.5, available=false, usm=5.5}'",
+        "caused_by": {
+          "type": "illegal_argument_exception",
+          "reason": "Expected text at 1:1273 but found START_OBJECT"
+        }
+      }
+    }
+  },
+  {
+    "index": {
+      "_index": "scuffers_products",
+      "_id": "https://scuffers.com/collections/iconic-camo-sneakers/products/iconic-burgundy-camo-sneaker",
+      "status": 400,
+      "error": {
+        "type": "document_parsing_exception",
+        "reason": "[1:1452] failed to parse field [sizes] of type [keyword] in document with id 'https://scuffers.com/collections/iconic-camo-sneakers/products/iconic-burgundy-camo-sneaker'. Preview of field's value: '{eu=36, uk=4.5, usw=6.5, available=false, usm=5.5}'",
+        "caused_by": {
+          "type": "illegal_argument_exception",
+          "reason": "Expected text at 1:1387 but found START_OBJECT"
+        }
+      }
+    }
+  },
+  {
+    "index": {
+      "_index": "scuffers_products",
+      "_id": "https://scuffers.com/collections/iconic-camo-sneakers/products/iconic-pink-camo-sneaker",
+      "status": 400,
+      "error": {
+        "type": "document_parsing_exception",
+        "reason": "[1:1396] failed to parse field [sizes] of type [keyword] in document with id 'https://scuffers.com/collections/iconic-camo-sneakers/products/iconic-pink-camo-sneaker'. Preview of field's value: '{eu=36, uk=4.5, usw=6.5, available=true, usm=5.5}'",
+        "caused_by": {
+          "type": "illegal_argument_exception",
+          "reason": "Expected text at 1:1332 but found START_OBJECT"
+        }
+      }
+    }
+  },
+  {
+    "index": {
+      "_index": "scuffers_products",
+      "_id": "https://scuffers.com/products/iconic-mule-ecru-sneaker",
+      "status": 400,
+      "error": {
+        "type": "document_parsing_exception",
+        "reason": "[1:1422] failed to parse field [sizes] of type [keyword] in document with id 'https://scuffers.com/products/iconic-mule-ecru-sneaker'. Preview of field's value: '{eu=36, uk=4.5, usw=6.5, available=false, usm=5.5}'",
+        "caused_by": {
+          "type": "illegal_argument_exception",
+          "reason": "Expected text at 1:1357 but found START_OBJECT"
+        }
+      }
+    }
+  },
+  {
+    "index": {
+      "_index": "scuffers_products",
+      "_id": "https://scuffers.com/products/iconic-braided-purple-sneaker",
+      "status": 400,
+      "error": {
+        "type": "document_parsing_exception",
+        "reason": "[1:1942] failed to parse field [sizes] of type [keyword] in document with id 'https://scuffers.com/products/iconic-braided-purple-sneaker'. Preview of field's value: '{eu=36, uk=4.5, usw=6.5, available=false, usm=5.5}'",
+        "caused_by": {
+          "type": "illegal_argument_exception",
+          "reason": "Expected text at 1:1877 but found START_OBJECT"
+        }
+      }
+    }
+  },
+  {
+    "index": {
+      "_index": "scuffers_products",
+      "_id": "https://scuffers.com/products/iconic-braided-beige-sneaker",
+      "status": 400,
+      "error": {
+        "type": "document_parsing_exception",
+        "reason": "[1:1657] failed to parse field [sizes] of type [keyword] in document with id 'https://scuffers.com/products/iconic-braided-beige-sneaker'. Preview of field's value: '{eu=36, uk=4.5, usw=6.5, available=true, usm=5.5}'",
+        "caused_by": {
+          "type": "illegal_argument_exception",
+          "reason": "Expected text at 1:1593 but found START_OBJECT"
+        }
+      }
+    }
+  },
+  {
+    "index": {
+      "_index": "scuffers_products",
+      "_id": "https://scuffers.com/products/iconic-braided-brown-sneaker",
+      "status": 400,
+      "error": {
+        "type": "document_parsing_exception",
+        "reason": "[1:1793] failed to parse field [sizes] of type [keyword] in document with id 'https://scuffers.com/products/iconic-braided-brown-sneaker'. Preview of field's value: '{eu=36, uk=4.5, usw=6.5, available=true, usm=5.5}'",
+        "caused_by": {
+          "type": "illegal_argument_exception",
+          "reason": "Expected text at 1:1729 but found START_OBJECT"
+        }
+      }
+    }
+  },
+  {
+    "index": {
+      "_index": "scuffers_products",
+      "_id": "https://scuffers.com/products/iconic-mule-red-wine-sneaker",
+      "status": 400,
+      "error": {
+        "type": "document_parsing_exception",
+        "reason": "[1:1356] failed to parse field [sizes] of type [keyword] in document with id 'https://scuffers.com/products/iconic-mule-red-wine-sneaker'. Preview of field's value: '{eu=36, uk=4.5, usw=6.5, available=false, usm=5.5}'",
+        "caused_by": {
+          "type": "illegal_argument_exception",
+          "reason": "Expected text at 1:1291 but found START_OBJECT"
+        }
+      }
+    }
+  }
+]

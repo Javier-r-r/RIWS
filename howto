@@ -1,0 +1,59 @@
+Comandos para poder ejecutar el scraper, levantar elastic y el api. 
+Se recomienda usar un entorno virtual
+Se debe tener instalado python, docker y se recomienda venv
+
+1. Crear y activar entorno virtual
+python3 -m venv .venv
+source .venv/bin/activate
+
+2. Instalar dependencias
+pip install -r requirements.txt
+
+3. Ejecutamos el scraper. Se puede modificar el parámetro CLOSESPIDER_ITEMCOUNT para ajustar el número de items a recibir.
+python -m scrapy crawl scuffers -O scuffers_output.json -s CLOSESPIDER_ITEMCOUNT=500
+
+4. Agrupación por colores
+python scripts/group_by_color.py
+
+5. Levantar ElasticSearch con docker
+docker compose down --remove-orphans
+docker compose build
+docker compose up -d elasticsearch
+
+6. Creamos el índice (esperar unos 20 segundos despues de haber levantado el docker, puede fallar si se hace muy rápido)
+python index_tools/create_index.py
+
+7. Insertamos los documentos
+python index_tools/insert_docs.py 
+
+8. Para levantar el API
+cd api 
+uvicorn main:app --reload --port 8000
+
+9. Realizar consultar, por ejemplo:
+curl -X 'GET' \
+  'http://localhost:8000/search?q=pants&page=1&per_page=20' \
+  -H 'accept: application/json'
+
+10. Comprobar que en el response body, el campo es se encuentra a true. Esto certifica que se está usando ElasticSearch para realizar la búsqueda.
+
+11. Ejecutar la app-search (UI)
+
+- Requisitos:
+  - Node.js (la referencia usa Node v16.13.0). Puedes usar nvm (macOS/Linux) o nvm-windows (Windows) o instalar Node desde https://nodejs.org/.
+  - npm (viene con Node) o yarn.
+
+- Instalar dependencias y arrancar la app (desde la raíz del proyecto):
+  - En PowerShell / cmd (Windows):
+    cd app-search-reference-ui-react-master
+    npm install
+    npm start
+
+  - En macOS / Linux (ejemplo con nvm):
+    nvm install 16.13.0
+    nvm use 16.13.0
+    cd app-search-reference-ui-react-master
+    npm install
+    npm start
+
+- Por defecto la app se abrirá en http://localhost:3000. 

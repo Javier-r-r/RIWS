@@ -1,0 +1,12 @@
+{
+  "engineName": "scuffers_engine",
+  "host": "http://127.0.0.1:8000",
+  "titleField": "title",
+  "urlField": "url",
+  "thumbnailField": "images",
+  "searchFields": ["title"],
+  "resultFields": ["title", "description", "price", "currency", "sizes", "size", "images", "sku", "url"],
+  "facets": ["sizes"],
+  "sortFields": ["price"],
+  "querySuggestFields": ["title"]
+}

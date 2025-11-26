@@ -1,0 +1,6 @@
+beautifulsoup4>=4.12.0
+scrapy>=2.8
+lxml
+elasticsearch>=8.0.0
+fastapi
+uvicorn[standard]

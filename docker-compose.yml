@@ -1,0 +1,17 @@
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.1.5
+    container_name: elasticsearch
+    environment:
+      - "xpack.security.enabled=false"
+      - "xpack.security.enrollment.enabled=false"
+      - "discovery.type=single-node"
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "http.cors.enabled=true"
+      # Use a JSON array string for allow-origin when passing via env var
+      - "http.cors.allow-origin=http://localhost:5173,http://localhost:3000,http://127.0.0.1:8000"
+      - "http.cors.allow-headers=X-Requested-With, X-Auth-Token, Content-Type, Content-Length, Authorization, Access-Control-Allow-Headers, Accept, x-elastic-client-meta"
+      - "http.cors.allow-methods= OPTIONS,HEAD,GET,POST,PUT,DELETE"
+    ports:
+      - "9200:9200"
+      - "9300:9300"

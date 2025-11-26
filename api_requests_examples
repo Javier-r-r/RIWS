@@ -1,0 +1,3 @@
+curl 'http://localhost:8000/search?q=pants’
+curl 'http://localhost:8000/search?q=pants&max_price=80'
+curl 'http://localhost:8000/search?q=pants&min_price=80&max_price=90'
